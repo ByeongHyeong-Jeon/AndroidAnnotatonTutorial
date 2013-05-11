@@ -6,11 +6,11 @@
 
     <uses-sdk android:minSdkVersion="17" />
     <application
-            android:label="@string/title_activity_main"
+            android:label="@string/titleDisplayMessageActivity"
             android:icon="@drawable/ic_launcher">
         <activity
                 android:name=".InputMessageActivity_"
-                android:label="@string/title_activity_main">
+                android:label="@string/titleInputMessageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -18,8 +18,7 @@
         </activity>
         <activity
                 android:name=".DisplayMessageActivity_"
-                android:label="@string/title_activity_display_message">
-                android:parentActivityName="net.sinclairstudios.android.tutorialone.InputMessageActivity"
-        </activity>
+                android:label="@string/titleDisplayMessageActivity"
+                android:parentActivityName="net.sinclairstudios.android.tutorialone.InputMessageActivity_"/>
     </application>
 </manifest>

@@ -16,7 +16,7 @@ public class InputMessageActivity extends Activity {
 
     @Click
     public void sendButton() {
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        Intent intent = new Intent(this, DisplayMessageActivity_.class);
         intent.putExtra(EXTRA_MESSAGE, editText.getText().toString());
         startActivity(intent);
     }

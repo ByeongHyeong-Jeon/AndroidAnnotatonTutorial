@@ -7,11 +7,17 @@ import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 import android.widget.TextView;
+import com.googlecode.androidannotations.annotations.AfterViews;
 import com.googlecode.androidannotations.annotations.EActivity;
 import com.googlecode.androidannotations.annotations.ViewById;
+import com.googlecode.androidannotations.annotations.res.DimensionRes;
+import com.googlecode.androidannotations.annotations.res.IntegerRes;
 
-@EActivity(R.layout.display_message_activity)
+@EActivity
 public class DisplayMessageActivity extends Activity {
+
+    @DimensionRes
+    public float messageTextSize;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +29,12 @@ public class DisplayMessageActivity extends Activity {
 
         Intent intent = getIntent();
         String message = intent.getStringExtra(InputMessageActivity.EXTRA_MESSAGE);
-
         initTextContentView(message);
     }
 
     private void initTextContentView(String message) {
         TextView textView = new TextView(this);
-        textView.setTextSize(40f);
+        textView.setTextSize(messageTextSize);
         textView.setText(message);
         setContentView(textView);
     }
