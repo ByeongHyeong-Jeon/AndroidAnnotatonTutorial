@@ -1,0 +1,9 @@
+out/*
+local.properties
+project.properties
+gen/*
+aa-gen/*
+.idea/*
+*.DS_Store
+
+AndroidAnnotationTutorial.iml
