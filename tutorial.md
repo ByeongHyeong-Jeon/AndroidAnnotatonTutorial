@@ -22,10 +22,11 @@ Intro talk during setup
 <td>
 Create projects & directories
 <ul>
-<li>A: New Project, Android 4.2.2 Platform. Activity name "InputMessageActivity".</li>
-
-<li>A: Set up Android Annotations annotation processor, exporting to "gen".</li>
-<li>A: Set up Android Annotations library module import.</li>
+<li>Note: Do not use numbers in any names, references or IDs.</li>
+<li>A: New Project, "AndroidAnnotations", Android 4.2.2 Platform. Activity name "InputMessageActivity".</li>
+<li>A: Target Device should be "USB Device". ADB wil bridge the TCP/IP for us.</li>
+<li>A: Set up Android Annotations annotation processor. Specify Processor Path, export to "gen" relative to module content root. (androidannotations)</li>
+<li>A: Set up Android Annotations library module import (androidannotations-api).</li>
 </ul>
 </td>
 <td>Fiona</td>
@@ -37,6 +38,7 @@ Create projects & directories
 "Input Message Activity" .xml
 <ul>
 <li>F: Draw bubble diagram of activity layout. Include inheritence key.</li>
+<li>A: Use designer view to drag & drop layout elements.</li>
 <li>A: Use designer view to drag & drop layout elements.</li>
 </ul>
 </td>
