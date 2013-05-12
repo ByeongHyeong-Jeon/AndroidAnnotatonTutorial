@@ -7,7 +7,7 @@
     <uses-sdk android:minSdkVersion="17" />
     <application
             android:label="@string/titleDisplayMessageActivity"
-            android:icon="@drawable/ic_launcher">
+            android:icon="@drawable/main_icon">
         <activity
                 android:name=".InputMessageActivity_"
                 android:label="@string/titleInputMessageActivity">
