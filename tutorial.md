@@ -22,6 +22,8 @@ Intro talk during setup
 <td>
 Create projects & directories
 <ul>
+<li>A: New Project, Android 4.2.2 Platform. Activity name "InputMessageActivity".</li>
+
 <li>A: Set up Android Annotations annotation processor, exporting to "gen".</li>
 <li>A: Set up Android Annotations library module import.</li>
 </ul>
